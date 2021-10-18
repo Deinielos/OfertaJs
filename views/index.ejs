@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="images/paquete.png">
+</head>
+<nav>
+    <h1>Ofertas</h1>
+    <a href="/nueva">Nueva Oferta</a>
+    <form action="/">
+        <input type="text" name="nombre" placeholder="Buscar por nombre">
+        <input type="submit" value="Buscar">
+    </form>
+</nav>
+<body>
+    <section>
+        <form action="">
+            <ul>
+                <%insercionOfertas.map((oferta)=>{ %>
+                    <li>
+                        <img src="images/paquete.png" alt="paquete">
+                        <div>
+                            <p>Nombre:<%=oferta.nombre%></p>
+                            <p>Precio:<%=oferta.precio%>
+                            </p>
+                        </div>
+                    </li>
+                    <% })%>
+            </ul>
+        </form>
+    </section>
+</body>
+</html>

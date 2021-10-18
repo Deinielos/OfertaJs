@@ -1,0 +1,8 @@
+.nuevo {
+  display: flex;
+  flex-direction: column;
+}
+
+.nuevo * {
+  margin: 8px 0px;
+}
